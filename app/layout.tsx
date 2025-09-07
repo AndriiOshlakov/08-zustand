@@ -22,13 +22,13 @@ export const metadata: Metadata = {
       " NoteHub is a simple and efficient application designed for managing personal notes.",
     images: [
       {
-        url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
+        url: "https://08-zustand-phi-bice.vercel.app/",
         width: 1200,
         height: 630,
         alt: "Welcome to NoteHub",
       },
     ],
-    url: "https://08-zustand.com/",
+    url: "https://08-zustand-phi-bice.vercel.app/",
   },
 };
 
