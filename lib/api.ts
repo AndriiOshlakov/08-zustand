@@ -8,10 +8,8 @@ interface PostsHttpResponse {
   totalPages: number;
 }
 
-const BASE_URL = "https://notehub-public.goit.study/api/notes";
-const headers = { Authorization: `Bearer ${myPostsKey}` };
+export type NoteCreateData = Pick<Note, "title" | "content" | "tag">;
 
-// fetchNotes виконує запит на сервер для отримання колекції нотатків
 export interface FetchNotesParams {
   page?: number;
   perPage?: number;
@@ -19,6 +17,10 @@ export interface FetchNotesParams {
   tag?: NoteTag;
 }
 
+const BASE_URL = "https://notehub-public.goit.study/api/notes";
+const headers = { Authorization: `Bearer ${myPostsKey}` };
+
+// fetchNotes виконує запит на сервер для отримання колекції нотатків
 export const fetchNotes = async ({
   page,
   perPage,
