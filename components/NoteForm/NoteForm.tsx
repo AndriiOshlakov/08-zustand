@@ -76,9 +76,10 @@ export default function NoteForm() {
           value={draft.tag}
           onChange={(e) => setDraft({ tag: e.target.value as NoteTag })}
         >
-          <option value="Todo">Todo</option> <option value="Work">Work</option>{" "}
-          <option value="Personal">Personal</option>{" "}
-          <option value="Meeting">Meeting</option>{" "}
+          <option value="Todo">Todo</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Meeting">Meeting</option>
           <option value="Shopping">Shopping</option>
         </select>
       </div>
