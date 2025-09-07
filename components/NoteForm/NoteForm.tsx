@@ -5,7 +5,7 @@ import { NoteCreatePayload, NoteTag } from "@/types/note";
 import { createNote } from "@/lib/api";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-import { useNoteDraftStore } from "@/lib/store/NoteStore";
+import { useNoteDraftStore } from "@/lib/store/noteStore";
 
 interface NoteFormValues {
   title: string;
